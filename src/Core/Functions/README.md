@@ -1,0 +1,10 @@
+# functions:
+
+get_google_result_all
+get_google_result_video
+get_google_result_news
+get_google_result_images
+get_google_result_maps
+
+get_wikipedia_result
+

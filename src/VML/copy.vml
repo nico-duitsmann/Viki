@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?vml version="0.1dev"?>
+
+<container>
+    <neuron>
+        <input>what did i say?</input>
+        <output>
+            <answer>{INPUT}</answer>
+            <feeling>Happy</feeling>
+        </output>
+    </neuron>
+    <neuron>
+        <input>Cat</input>
+        <output>
+            <answer>Meow meow.</answer>
+            <feeling>Like a mouse</feeling>
+        </output>
+        <output>
+            <answer>I've never seen a cat.</answer>
+            <feeling>Like a tiger</feeling>
+        </output>
+    </neuron>
+</container>

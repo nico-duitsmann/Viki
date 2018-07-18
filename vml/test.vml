@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?vml version="0.1dev"?>
+
+<container>
+    <neuron>
+        <input>My name is</input>
+        <output>
+            <answer>Hello {INPUT}</answer>
+            <feeling>Happy</feeling>
+            <eval>setConst(VA_USER, {INPUT}, true);</eval>
+        </output>
+    </neuron>
+    <neuron>
+        <input>I like</input>
+        <output>
+            <answer>I like {INPUT} too. Look what i've found:</answer>
+            <feeling>Happy</feeling>
+            <eval>getGoogleImage({INPUT});</eval>
+        </output>
+    </neuron>
+    <neuron>
+        <input>Who is Nico Duitsmann?</input>
+        <output>
+            <answer>Nico Duitsmann is my creator.</answer>
+            <feeling>Happy</feeling>
+        </output>
+    </neuron>
+    <neuron>
+        <input>Who is</input>
+        <output>
+            <answer>Wait i look up who is {INPUT}</answer>
+            <eval>vml_lookup({INPUT})</eval>
+        </output>
+    </neuron>
+    <neuron>
+        <input>Tiger</input>
+        <output>
+            <answer>A very large solitary cat with a yellow-brown coat striped with black.</answer>
+            <feeling>Like a tiger</feeling>
+        </output>
+        <output>
+            <answer>Tiger is my favourite animal.</answer>
+            <feeling>Like a tiger</feeling>
+        </output>
+    </neuron>
+    <neuron>
+        <input>{INPUT} is very cool</input>
+        <output>
+            <answer>Yes {INPUT} is a cool person.</answer>
+            <feeling>Normal</feeling>
+        </output>
+        <output>
+            <answer>Maybe</answer>
+            <feeling>Thinking</feeling>
+        </output>
+        <output>
+            <answer>I dont' know</answer>
+            <feeling>Thinking</feeling>
+        </output>
+    </neuron>
+    <neuron>
+        <input>Who am i?</input>
+        <output>
+            <answer>Your name is {VA_USER}</answer>
+            <feeling>Happy</feeling>
+        </output> 
+    </neuron>
+    <neuron>
+        <input>help</input>
+        <output>
+            <answer>Welcome to viki, your virtual assistant. Type something..
+            </answer>
+            <feeling>Happy</feeling>
+        </output>
+    </neuron>
+    <neuron>
+        <input>exit</input>
+        <output>
+            <answer>Bye {VA_USER}</answer>
+            <feeling>Sad</feeling>
+            <eval>exit;</eval>
+        </output>
+    </neuron>
+</container>
